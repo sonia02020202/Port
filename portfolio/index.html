@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonia Serrano Portfolio</title>
+  <style>
+    /* Background animation loop */
+    @keyframes backgroundPulse {
+      from {
+        background-color: black;
+      }
+      to {
+        background-color: #695d72;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      border: 10px solid #4d4081;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+
+      /* Animation settings */
+      animation: backgroundPulse 6s ease-in-out infinite alternate;
+    }
+
+    header {
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    
+    }
+
+    .nav-links {
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .nav-links a:hover {
+     color: #a64ca6; /* soft purple */
+}
+
+    .main-section {
+      color: #d3d3d3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 40px 40px 40px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .intro-text {
+      line-height: 1.2;
+      flex: 1;
+    }
+
+    .intro-text h1 {
+      font-size: 36px;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .intro-text h2 {
+      font-size: 42px;
+      margin: 10px 0 0 0;
+      font-weight: bold;
+    }
+
+    .intro-text p {
+      font-size: 22px;
+      margin: 15px 0 0 0;
+    }
+
+    .avatar {
+      width: 200px;
+      height: auto;
+      border-radius: 40% / 30%;
+      background-color: white;
+      padding: 10px;
+      margin-left: 40px;
+    }
+
+    .code-image-container {
+      height: 25vh;
+      overflow: hidden;
+    }
+
+    .code-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .logo {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Sonia Serrano</div>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <section class="main-section">
+    <div class="intro-text">
+      <h1>Hello I’m</h1>
+      <h2>Sonia&nbsp;&nbsp;Serrano</h2>
+      <p>Web Developer</p>
+    </div>
+    <div>
+      <img src="images/so.jpg" alt="Sonia image" class="avatar" />
+    </div>
+  </section>
+
+  <div class="code-image-container">
+    <img src="images/code.jpg" alt="Code background" class="code-image" />
+  </div>
+</body>
+</html>

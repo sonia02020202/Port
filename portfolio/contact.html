@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      border: 10px solid #4d4081;
+      font-family: Arial, sans-serif;
+      color: white;
+      padding: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    header {
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .nav-links {
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      color: rgb(250, 246, 250);
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .nav-links a:hover {
+     color: #a64ca6; /* soft purple */
+}
+
+    .spacer {
+      height: 80px; /* height of header to prevent overlap */
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.8;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .field-group {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    label {
+      font-size: 18px;
+      width: 120px;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    input, textarea {
+      background-color: #e6e6e6;
+      border: none;
+      padding: 5px 10px;
+      font-size: 16px;
+      width: 220px;
+    }
+
+    textarea {
+      height: 60px;
+      resize: none;
+    }
+
+    button {
+  background-color: #e6e6e6;
+  border: none;
+  font-size: 18px;
+  padding: 8px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #a855f7; /* Light purple */
+  color: white;
+}
+
+button:active {
+  background-color: #7e22ce; /* Darker purple */
+  transform: scale(0.97);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Sonia Serrano</div>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html">Portfolio</a>
+    </div>
+  </header>
+  <div class="spacer"></div>
+  <div class="container">
+    <p>Contact: &nbsp;Sonia Serrano</p>
+    <p>@ 905-000-0000</p>
+    <p>Email: n01717008@humber.ca</p>
+    <p>or Submit your information:</p>
+
+    <form action="https://formspree.io/f/xjkyznel" method="POST">
+      <div class="field-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" name="first-name" id="first-name" required>
+      </div>
+
+      <div class="field-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" name="last-name" id="last-name" required>
+      </div>
+
+      <div class="field-group">
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" required>
+      </div>
+
+      <div class="field-group">
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <div class="field-group">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
